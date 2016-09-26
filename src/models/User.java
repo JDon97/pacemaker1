@@ -1,5 +1,6 @@
 package models;
 
+
 public class User 
 {
   public String firstName;
@@ -9,6 +10,11 @@ public class User
 
   public User()
   {
+	  
+  }
+  public String toString()
+  {
+    return firstName + ' ' + lastName +' ' +  email +' ' +  password; 
   }
 
   public User(String firstName, String lastName, String email, String password)
